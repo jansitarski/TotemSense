@@ -168,62 +168,67 @@ def compress_deflate_raw(data: bytes) -> bytes:
 
 def extract_function_body(filepath: str) -> str:
     """
-    Extract the Lua function body from a file.
-    Expects format: function(...) <body> end
-    Returns the body content without the function wrapper.
+    Extract the hook's Lua code from a file.
+
+    Handles two formats:
+      - Bare body (new): comment header, then the code lines directly.
+      - Wrapped (legacy): comment header, then function(...)\\n<body>\\nend.
+
+    For the wrapped format the function(...) line and the final end are stripped.
+    The body's closing end is identified as the LAST non-empty line of the file,
+    avoiding the truncation bug where an inner `end` was mistaken for the outer one.
     """
     with open(filepath, "r") as f:
         content = f.read()
-    
-    # Remove comment headers (lines starting with --)
+
     lines = content.split("\n")
-    code_lines = []
-    in_function = False
-    
-    for line in lines:
-        stripped = line.strip()
-        
-        # Skip comment-only lines at the start
-        if not in_function and stripped.startswith("--"):
-            continue
-        
-        # Detect function start
-        if not in_function and stripped.startswith("function("):
-            in_function = True
-            continue
-        
-        # Detect function end
-        if in_function and stripped == "end":
-            break
-        
-        # Collect function body
-        if in_function:
-            code_lines.append(line)
-    
+
+    # Skip the leading comment/blank header block
+    start = 0
+    while start < len(lines) and (
+        lines[start].strip() == "" or lines[start].strip().startswith("--")
+    ):
+        start += 1
+
+    code_lines = lines[start:]
+
+    # Strip function(...)...end wrapper when present
+    if code_lines and code_lines[0].strip().startswith("function("):
+        code_lines = code_lines[1:]          # drop the function(...) signature line
+        while code_lines and code_lines[-1].strip() == "":
+            code_lines.pop()                 # trim trailing blank lines
+        if code_lines and code_lines[-1].strip() == "end":
+            code_lines.pop()                 # drop the outer closing end
+
     return "\n".join(code_lines).strip("\n")
 
 
 def load_hook_files(script_dir: str) -> dict:
     """
-    Load all hook files and extract their function bodies.
-    Returns dict mapping hook name to code body.
+    Load all hook files and build complete function expressions for the import string.
+
+    Plater compiles imported scripts with `loadstring("return " .. code)()`, so `code`
+    must be a valid Lua expression — i.e. a complete anonymous function.  The source
+    files are stored body-only (for direct pasting into Plater's script editor), so we
+    wrap each body in the correct function signature here before encoding.
+    Returns dict mapping Plater hook name to the full function expression string.
     """
+    # (filename, Plater hook name, function signature)
+    hook_specs = [
+        ("constructor.lua",        "Constructor",        "function(self, unitId, unitFrame, envTable, modTable)"),
+        ("on_nameplate_added.lua", "Nameplate Added",    "function(self, unitId, unitFrame, envTable, modTable)"),
+        ("on_nameplate_removed.lua","Nameplate Removed", "function(self, unitId, unitFrame, envTable, modTable)"),
+    ]
+
     hooks = {}
-    
-    # Map filenames to Plater hook names
-    file_map = {
-        "constructor.lua": "Constructor",
-        "on_nameplate_added.lua": "Nameplate Added",
-        "on_nameplate_removed.lua": "Nameplate Removed",
-    }
-    
-    for filename, hook_name in file_map.items():
+    for filename, hook_name, signature in hook_specs:
         filepath = os.path.join(script_dir, filename)
         if not os.path.isfile(filepath):
             raise FileNotFoundError(f"Missing required file: {filepath}")
-        
-        hooks[hook_name] = extract_function_body(filepath)
-    
+
+        body = extract_function_body(filepath)
+        hooks[hook_name] = f"{signature}\n{body}\nend"
+
     return hooks
 
 
@@ -241,20 +246,50 @@ def load_hook_files(script_dir: str) -> dict:
 
 
 def build_index_table(hooks: dict) -> dict:
-    """Build a Plater-compatible hook index table for export."""
+    """Build a Plater-compatible hook index table for export.
+
+    Matches Plater's PrepareTableToExport() exactly:
+      tableToExport["1"] = Name       (string keys, not integer keys)
+      tableToExport["2"] = Icon
+      tableToExport["3"] = Desc
+      tableToExport["4"] = Author
+      tableToExport["5"] = Time
+      tableToExport["6"] = Revision
+      tableToExport["7"] = PlaterCore
+      tableToExport["8"] = LoadConditions
+      tableToExport["9"] = { hookName = code, ... }
+      tableToExport["UID"] = unique id
+      tableToExport["options"] = {}
+      tableToExport["addon"] = "Plater"
+      tableToExport["tocversion"] = build info
+      tableToExport["type"] = "hook"
+    """
+    ts = int(time.time())
     return {
         "1": "CCPlates",
         "2": "Interface\\Icons\\Spell_Nature_TremorTotem",
         "3": "Shows Tremor Totem icon on nameplates of NPCs that cast Fear, Charm, or Sleep",
         "4": "CCPlates",
-        "5": int(time.time()),
-        "6": 1,        # Revision
-        "7": 1,        # PlaterCore (minimal version)
-        "8": {},        # LoadConditions (empty = load always)
-        "9": hooks,     # { "Constructor": "...", "Nameplate Added": "...", ... }
+        "5": ts,
+        "6": 1,           # Revision
+        "7": 1,           # PlaterCore minimum version
+        "8": {            # LoadConditions — all 10 sub-fields required by Plater
+            "class": {},
+            "spec": {},
+            "race": {},
+            "talent": {},
+            "pvptalent": {},
+            "group": {},
+            "role": {},
+            "affix": {},
+            "encounter_ids": {},
+            "map_ids": {},
+        },
+        "9": hooks,       # { "Constructor": "...", "Nameplate Added": "...", ... }
+        "UID": ts,        # unique identifier
         "options": {},
         "addon": "Plater",
-        "tocversion": 20505,  # TBC Classic
+        "tocversion": "2.5.5",
         "type": "hook",
     }
 

@@ -37,35 +37,32 @@ def build_constructor():
     
     # Build the constructor
     constructor = f'''-- =============================================================================
--- CONSTRUCTOR HOOK
+-- CONSTRUCTOR HOOK  (signature: function(self, envTable))
 -- Runs once when the mod loads. Initializes configuration and NPC database.
 -- =============================================================================
--- INSTALLATION: Copy this entire file into the "Constructor" hook in Plater Modding tab.
+-- INSTALLATION: Paste the code below into the "Constructor" hook in Plater Modding tab.
 -- =============================================================================
 
-function(self, envTable)
-  -- ---------------------------------------------------------------------------
-  -- CONFIGURATION
-  -- ---------------------------------------------------------------------------
-  
-  local cfg = {{
-    iconSize    = 20,
-    iconTexture = "Interface\\\\Icons\\\\Spell_Nature_TremorTotem",
-    xOffset     = -2,
-    yOffset     = 0,
-    anchorPoint = "RIGHT",
-  }}
-  envTable.cfg = cfg
-  
-  -- ---------------------------------------------------------------------------
-  -- NPC DATABASE (Generated from database/*.json)
-  -- ---------------------------------------------------------------------------
-  
-  envTable.FearDatabase = {{
+-- ---------------------------------------------------------------------------
+-- CONFIGURATION
+-- ---------------------------------------------------------------------------
+
+local cfg = {{
+  iconSize    = 20,
+  iconTexture = "Interface\\\\Icons\\\\Spell_Nature_TremorTotem",
+  xOffset     = -2,
+  yOffset     = 0,
+  anchorPoint = "RIGHT",
+}}
+envTable.cfg = cfg
+
+-- ---------------------------------------------------------------------------
+-- NPC DATABASE (Generated from database/*.json)
+-- ---------------------------------------------------------------------------
+
+envTable.FearDatabase = {{
 {db_entries}
-  }}
-  
-end
+}}
 '''
     
     # Write the final constructor

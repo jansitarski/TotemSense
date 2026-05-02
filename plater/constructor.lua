@@ -1,29 +1,28 @@
 -- =============================================================================
--- CONSTRUCTOR HOOK
+-- CONSTRUCTOR HOOK  (signature: function(self, envTable))
 -- Runs once when the mod loads. Initializes configuration and NPC database.
 -- =============================================================================
--- INSTALLATION: Copy this entire file into the "Constructor" hook in Plater Modding tab.
+-- INSTALLATION: Paste the code below into the "Constructor" hook in Plater Modding tab.
 -- =============================================================================
 
-function(self, envTable)
-  -- ---------------------------------------------------------------------------
-  -- CONFIGURATION
-  -- ---------------------------------------------------------------------------
-  
-  local cfg = {
-    iconSize    = 20,
-    iconTexture = "Interface\\Icons\\Spell_Nature_TremorTotem",
-    xOffset     = -2,
-    yOffset     = 0,
-    anchorPoint = "RIGHT",
-  }
-  envTable.cfg = cfg
-  
-  -- ---------------------------------------------------------------------------
-  -- NPC DATABASE (Generated from database/*.json)
-  -- ---------------------------------------------------------------------------
-  
-  envTable.FearDatabase = {
+-- ---------------------------------------------------------------------------
+-- CONFIGURATION
+-- ---------------------------------------------------------------------------
+
+local cfg = {
+  iconSize    = 20,
+  iconTexture = "Interface\\Icons\\Spell_Nature_TremorTotem",
+  xOffset     = -2,
+  yOffset     = 0,
+  anchorPoint = "RIGHT",
+}
+envTable.cfg = cfg
+
+-- ---------------------------------------------------------------------------
+-- NPC DATABASE (Generated from database/*.json)
+-- ---------------------------------------------------------------------------
+
+envTable.FearDatabase = {
   -- CLASSIC DUNGEONS
   [3671] = { spells = {{id=8040, name="Druid's Slumber", type="sleep"}}, instance="Wailing Caverns", npc="Lady Anacondra" },
   [3669] = { spells = {{id=8040, name="Druid's Slumber", type="sleep"}}, instance="Wailing Caverns", npc="Lord Cobrahn" },
@@ -102,6 +101,4 @@ function(self, envTable)
   [17968] = { spells = {{id=31970, name="Fear", type="fear"}}, instance="Hyjal Summit", npc="Archimonde" },
   [22847] = { spells = {{id=19386, name="Wyvern Sting", type="sleep"}}, instance="Black Temple", npc="Ashtongue Primalist" },
   [23576] = { spells = {{id=42398, name="Frightening Roar", type="fear"}}, instance="Zul'Aman", npc="Nalorakk" },
-  }
-  
-end
+}
