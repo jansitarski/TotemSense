@@ -1,0 +1,48 @@
+name: Package and Release
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate Plater import string
+        run: |
+          cd plater
+          python3 generate_import_string.py > import_string.txt
+          echo "Import string generated"
+          echo "Import string saved to plater/import_string.txt"
+
+      - name: Create GitHub Release with import string
+        uses: softprops/action-gh-release@v1
+        with:
+          files: plater/import_string.txt
+          body: |
+            ## CCPlates ${{ github.ref_name }}
+            
+            ### Installation
+            
+            1. Download `import_string.txt` from the assets below
+            2. Copy the contents
+            3. In-game: `/plater` → **Modding** tab → **Import Mod** → paste → **OK**
+            4. Enable CCPlates, click **Save**, `/reload`
+            
+            Also available on [wago.io](https://wago.io/2UXjP2xSx).
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

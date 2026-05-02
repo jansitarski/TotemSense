@@ -38,3 +38,6 @@ weakaura_generated/
 *.bak
 *.backup
 *.old
+
+# Packager output
+.release/
