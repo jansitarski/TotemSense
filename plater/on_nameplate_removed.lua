@@ -7,7 +7,7 @@
 -- =============================================================================
 
 function(self, unitId, unitFrame, envTable)
-  if unitFrame.TremorAlertIcon then
-    unitFrame.TremorAlertIcon:Hide()
+  if unitFrame.CCPlatesIcon then
+    unitFrame.CCPlatesIcon:Hide()
   end
 end

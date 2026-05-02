@@ -1,7 +1,7 @@
 # Project Structure
 
 ```
-TremorAlert/
+CCPlates/
 ├── README.md                       # Main documentation and overview
 ├── QUICKSTART.md                   # 5-minute installation guide
 ├── CHANGELOG.md                    # Version history and changes

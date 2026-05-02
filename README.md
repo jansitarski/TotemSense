@@ -1,6 +1,8 @@
-# TremorAlert - Plater Nameplate Mod
+# CCPlates - Crowd Control Nameplate Tracker
 
-A Plater Nameplates mod for WoW TBC Classic that displays a **Tremor Totem** icon overlay on nameplates of NPCs that cast Fear, Charm, or Sleep effects.
+A multi-platform nameplate mod for WoW TBC Classic that displays visual indicators on nameplates of NPCs that cast Fear, Charm, or Sleep effects. Works with Plater Nameplates, WeakAuras, and as a standalone addon.
+
+**Default Icon Theme**: Tremor Totem (Shaman utility) - displays when NPCs cast crowd control effects that Tremor Totem can remove.
 
 ## Features
 
@@ -40,7 +42,7 @@ The mod will be automatically installed with all three hooks configured!
 
 #### 3. Enable and Test
 
-1. In the **Modding** tab, check the **Enable** checkbox for TremorAlert
+1. In the **Modding** tab, check the **Enable** checkbox for CCPlates
 2. Click **Save** or **Apply**
 3. Type `/reload` to reload your UI
 4. Done! Tremor Totem icons will now appear on relevant nameplates

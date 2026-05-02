@@ -1,7 +1,7 @@
 -- =============================================================================
 -- CLASSIC DUNGEONS DATABASE
--- NPCs in Classic (Vanilla) dungeon instances that cast Fear, Charm, or Sleep
--- effects removable by Tremor Totem.
+-- NPCs in Classic dungeons that cast Fear, Charm, or Sleep effects.
+-- Default icon: Tremor Totem (removable by Tremor Totem).
 -- =============================================================================
 
 return {

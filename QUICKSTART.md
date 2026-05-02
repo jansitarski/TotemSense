@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get TremorAlert running in 5 minutes!
+Get CCPlates running in 5 minutes!
 
 ## Step 1: Prerequisites
 - Install **Plater Nameplates** addon from CurseForge or WoW Interface
@@ -31,7 +31,7 @@ The mod will be automatically installed with all three hooks configured!
 
 ## Step 5: Enable and Test
 
-1. In the Plater **Modding** tab, check the **Enable** checkbox for TremorAlert
+1. In the Plater **Modding** tab, check the **Enable** checkbox for CCPlates
 2. Click **Save** or **Apply**
 3. Type `/reload` to reload your UI
 

@@ -1,15 +1,15 @@
 -- =============================================================================
 -- NAMEPLATE ADDED HOOK
 -- Runs every time a nameplate becomes visible.
--- Determines whether to show the Tremor Totem icon.
+-- Determines whether to show the CC indicator icon.
 -- =============================================================================
 -- INSTALLATION: Copy this entire file into the "Nameplate Added" hook in Plater Modding tab.
 -- =============================================================================
 
 function(self, unitId, unitFrame, envTable)
   -- Always hide any leftover icon first (frame recycling defense)
-  if unitFrame.TremorAlertIcon then
-    unitFrame.TremorAlertIcon:Hide()
+  if unitFrame.CCPlatesIcon then
+    unitFrame.CCPlatesIcon:Hide()
   end
   
   -- Skip friendly units and players
@@ -32,14 +32,14 @@ function(self, unitId, unitFrame, envTable)
   
   -- Create or reuse the icon texture
   local cfg = envTable.cfg
-  local icon = unitFrame.TremorAlertIcon
+  local icon = unitFrame.CCPlatesIcon
   if not icon then
     icon = unitFrame.healthBar:CreateTexture(nil, "OVERLAY")
     icon:SetTexture(cfg.iconTexture)
     icon:SetWidth(cfg.iconSize)
     icon:SetHeight(cfg.iconSize)
     icon:SetPoint(cfg.anchorPoint, unitFrame.healthBar, cfg.anchorPoint, cfg.xOffset, cfg.yOffset)
-    unitFrame.TremorAlertIcon = icon
+    unitFrame.CCPlatesIcon = icon
   end
   
   icon:Show()

@@ -1,10 +1,10 @@
-# Contributing to TremorAlert
+# Contributing to CCPlates
 
-Thank you for your interest in improving TremorAlert! This guide will help you add new NPCs to the database.
+Thank you for your interest in improving CCPlates! This guide will help you add new NPCs to the database.
 
 ## Database Structure
 
-TremorAlert uses a **JSON source of truth** for the NPC database, which can be compiled into different formats (Plater, addon, WeakAura).
+CCPlates uses a **JSON source of truth** for the NPC database, which can be compiled into different formats (Plater, addon, WeakAura).
 
 **Source files:** `database/*.json`  
 **Generated files:** `plater/constructor.lua`, `addon_generated/Database.lua`, `weakaura_generated/database.lua`

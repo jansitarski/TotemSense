@@ -1,7 +1,7 @@
 -- =============================================================================
 -- TBC RAIDS DATABASE
--- NPCs in TBC raid instances that cast Fear, Charm, or Sleep effects
--- removable by Tremor Totem.
+-- NPCs in TBC raid instances that cast Fear, Charm, or Sleep effects.
+-- Default icon: Tremor Totem (removable by Tremor Totem).
 -- =============================================================================
 
 return {

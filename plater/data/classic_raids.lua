@@ -1,7 +1,7 @@
 -- =============================================================================
 -- CLASSIC RAIDS DATABASE
--- NPCs in Classic (Vanilla) raid instances that cast Fear, Charm, or Sleep
--- effects removable by Tremor Totem.
+-- NPCs in Classic raid instances that cast Fear, Charm, or Sleep effects.
+-- Default icon: Tremor Totem (removable by Tremor Totem).
 -- =============================================================================
 
 return {

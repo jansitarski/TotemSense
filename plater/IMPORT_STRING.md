@@ -4,7 +4,7 @@ This directory contains a Python script that automatically generates a Plater im
 
 ## What is this for?
 
-The import string allows users to install TremorAlert with a single copy-paste into Plater's Import dialog, instead of manually copying three separate files into three different hooks.
+The import string allows users to install CCPlates with a single copy-paste into Plater's Import dialog, instead of manually copying three separate files into three different hooks.
 
 ## Usage
 
@@ -27,7 +27,7 @@ This will:
 3. Go to the **Import** tab
 4. Paste the import string
 5. Click **Import**
-6. Done! TremorAlert is now installed
+6. Done! CCPlates is now installed
 
 ## Technical details
 

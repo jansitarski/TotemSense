@@ -1,6 +1,6 @@
 # Database Documentation
 
-The TremorAlert NPC database is stored in a platform-independent JSON format that can be compiled into different implementation formats (Plater, addon, WeakAura, etc.).
+The CCPlates NPC database is stored in a platform-independent JSON format that can be compiled into different implementation formats (Plater, addon, WeakAura, etc.).
 
 ## Directory Structure
 

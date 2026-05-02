@@ -1,7 +1,7 @@
 -- =============================================================================
 -- TBC DUNGEONS DATABASE
--- NPCs in TBC dungeon instances that cast Fear, Charm, or Sleep effects
--- removable by Tremor Totem.
+-- NPCs in TBC dungeons that cast Fear, Charm, or Sleep effects.
+-- Default icon: Tremor Totem (removable by Tremor Totem).
 -- =============================================================================
 
 return {
