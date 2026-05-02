@@ -79,4 +79,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details on adding NPCs.
 
 ## Credits
 
-NPC database from Wowhead, Icy Veins, and community raid guides. Plater only for now.
+NPC database from Wowhead, Icy Veins, and community raid guides.
