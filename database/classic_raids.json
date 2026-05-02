@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "expansion": "classic",
+    "content_type": "raids",
+    "version": "2.0.0",
+    "last_updated": "2026-05-02"
+  },
+  "npcs": {
+    "11673": {
+      "npc": "Ancient Core Hound",
+      "instance": "Molten Core",
+      "spells": [
+        {"id": 19408, "name": "Panic", "type": "fear"}
+      ]
+    },
+    "11982": {
+      "npc": "Magmadar",
+      "instance": "Molten Core",
+      "spells": [
+        {"id": 19408, "name": "Panic", "type": "fear"}
+      ]
+    },
+    "10184": {
+      "npc": "Onyxia",
+      "instance": "Onyxia's Lair",
+      "spells": [
+        {"id": 18431, "name": "Bellowing Roar", "type": "fear"}
+      ]
+    },
+    "10162": {
+      "npc": "Lord Victor Nefarius",
+      "instance": "Blackwing Lair",
+      "spells": [
+        {"id": 22678, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "11583": {
+      "npc": "Nefarian",
+      "instance": "Blackwing Lair",
+      "spells": [
+        {"id": 22686, "name": "Bellowing Roar", "type": "fear"}
+      ]
+    },
+    "12467": {
+      "npc": "Death Talon Captain",
+      "instance": "Blackwing Lair",
+      "spells": [
+        {"id": 15588, "name": "Frightening Shout", "type": "fear"}
+      ]
+    },
+    "14517": {
+      "npc": "High Priestess Jeklik",
+      "instance": "Zul'Gurub",
+      "spells": [
+        {"id": 22884, "name": "Psychic Scream", "type": "fear"}
+      ]
+    },
+    "11352": {
+      "npc": "Gurubashi Berserker",
+      "instance": "Zul'Gurub",
+      "spells": [
+        {"id": 19134, "name": "Frightening Shout", "type": "fear"}
+      ]
+    },
+    "11382": {
+      "npc": "Bloodlord Mandokir",
+      "instance": "Zul'Gurub",
+      "spells": [
+        {"id": 19134, "name": "Intimidating Shout", "type": "fear"}
+      ]
+    },
+    "15543": {
+      "npc": "Princess Yauj",
+      "instance": "Temple of Ahn'Qiraj",
+      "spells": [
+        {"id": 26580, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "15247": {
+      "npc": "Qiraji Brainwasher",
+      "instance": "Temple of Ahn'Qiraj",
+      "spells": [
+        {"id": 785, "name": "True Fulfillment", "type": "charm"}
+      ]
+    },
+    "15509": {
+      "npc": "Princess Huhuran",
+      "instance": "Temple of Ahn'Qiraj",
+      "spells": [
+        {"id": 26180, "name": "Wyvern Sting", "type": "sleep"}
+      ]
+    },
+    "15932": {
+      "npc": "Gluth",
+      "instance": "Naxxramas",
+      "spells": [
+        {"id": 29685, "name": "Terrifying Roar", "type": "fear"}
+      ]
+    },
+    "15990": {
+      "npc": "Kel'Thuzad",
+      "instance": "Naxxramas",
+      "spells": [
+        {"id": 28410, "name": "Chains of Kel'Thuzad", "type": "charm"}
+      ]
+    }
+  }
+}

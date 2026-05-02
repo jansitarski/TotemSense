@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "expansion": "tbc",
+    "content_type": "raids",
+    "version": "2.0.0",
+    "last_updated": "2026-05-02"
+  },
+  "npcs": {
+    "15547": {
+      "npc": "Spectral Charger",
+      "instance": "Karazhan",
+      "spells": [
+        {"id": 29321, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "15548": {
+      "npc": "Spectral Stallion",
+      "instance": "Karazhan",
+      "spells": [
+        {"id": 29321, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "17521": {
+      "npc": "The Big Bad Wolf",
+      "instance": "Karazhan",
+      "spells": [
+        {"id": 30752, "name": "Terrifying Howl", "type": "fear"}
+      ]
+    },
+    "17225": {
+      "npc": "Nightbane",
+      "instance": "Karazhan",
+      "spells": [
+        {"id": 36922, "name": "Bellowing Roar", "type": "fear"}
+      ]
+    },
+    "18831": {
+      "npc": "High King Maulgar",
+      "instance": "Gruul's Lair",
+      "spells": [
+        {"id": 16508, "name": "Intimidating Roar", "type": "fear"}
+      ]
+    },
+    "17256": {
+      "npc": "Hellfire Channeler",
+      "instance": "Magtheridon's Lair",
+      "spells": [
+        {"id": 30530, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "18829": {
+      "npc": "Hellfire Warder",
+      "instance": "Magtheridon's Lair",
+      "spells": [
+        {"id": 30530, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "21215": {
+      "npc": "Leotheras the Blind",
+      "instance": "Serpentshrine Cavern",
+      "spells": [
+        {"id": 37749, "name": "Madness", "type": "charm"}
+      ]
+    },
+    "22056": {
+      "npc": "Coilfang Strider",
+      "instance": "Serpentshrine Cavern",
+      "spells": [
+        {"id": 38154, "name": "Panic", "type": "fear"}
+      ]
+    },
+    "19622": {
+      "npc": "Kael'thas Sunstrider",
+      "instance": "Tempest Keep",
+      "spells": [
+        {"id": 44863, "name": "Fear", "type": "fear"},
+        {"id": 36797, "name": "Mind Control", "type": "charm"}
+      ]
+    },
+    "17808": {
+      "npc": "Anetheron",
+      "instance": "Hyjal Summit",
+      "spells": [
+        {"id": 31298, "name": "Sleep", "type": "sleep"}
+      ]
+    },
+    "17968": {
+      "npc": "Archimonde",
+      "instance": "Hyjal Summit",
+      "spells": [
+        {"id": 31970, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "22847": {
+      "npc": "Ashtongue Primalist",
+      "instance": "Black Temple",
+      "spells": [
+        {"id": 19386, "name": "Wyvern Sting", "type": "sleep"}
+      ]
+    },
+    "23576": {
+      "npc": "Nalorakk",
+      "instance": "Zul'Aman",
+      "spells": [
+        {"id": 42398, "name": "Frightening Roar", "type": "fear"}
+      ]
+    }
+  }
+}

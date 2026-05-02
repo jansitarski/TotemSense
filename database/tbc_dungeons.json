@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "expansion": "tbc",
+    "content_type": "dungeons",
+    "version": "2.0.0",
+    "last_updated": "2026-05-02"
+  },
+  "npcs": {
+    "17269": {
+      "npc": "Bleeding Hollow Darkcaster",
+      "instance": "Hellfire Ramparts",
+      "spells": [
+        {"id": 12542, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "17536": {
+      "npc": "Nazan",
+      "instance": "Hellfire Ramparts",
+      "spells": [
+        {"id": 39427, "name": "Bellowing Roar", "type": "fear"}
+      ]
+    },
+    "17381": {
+      "npc": "The Maker",
+      "instance": "The Blood Furnace",
+      "spells": [
+        {"id": 30923, "name": "Domination", "type": "charm"}
+      ]
+    },
+    "16807": {
+      "npc": "Grand Warlock Nethekurse",
+      "instance": "The Shattered Halls",
+      "spells": [
+        {"id": 30500, "name": "Death Coil", "type": "fear"}
+      ]
+    },
+    "16809": {
+      "npc": "Warbringer O'mrogg",
+      "instance": "The Shattered Halls",
+      "spells": [
+        {"id": 30584, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "17694": {
+      "npc": "Shadowmoon Darkcaster",
+      "instance": "The Shattered Halls",
+      "spells": [
+        {"id": 27641, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "17801": {
+      "npc": "Coilfang Siren",
+      "instance": "The Steamvault",
+      "spells": [
+        {"id": 31729, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "17960": {
+      "npc": "Coilfang Soothsayer",
+      "instance": "The Slave Pens",
+      "spells": [
+        {"id": 30923, "name": "Domination", "type": "charm"}
+      ]
+    },
+    "17961": {
+      "npc": "Coilfang Enchantress",
+      "instance": "The Slave Pens",
+      "spells": [
+        {"id": 30923, "name": "Domination", "type": "charm"}
+      ]
+    },
+    "18373": {
+      "npc": "Exarch Maladaar",
+      "instance": "Auchenai Crypts",
+      "spells": [
+        {"id": 32421, "name": "Soul Scream", "type": "charm"}
+      ]
+    },
+    "18325": {
+      "npc": "Sethekk Prophet",
+      "instance": "Sethekk Halls",
+      "spells": [
+        {"id": 27641, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "18639": {
+      "npc": "Cabal Spellbinder",
+      "instance": "Shadow Labyrinth",
+      "spells": [
+        {"id": 33502, "name": "Brain Wash", "type": "charm"}
+      ]
+    },
+    "18731": {
+      "npc": "Ambassador Hellmaw",
+      "instance": "Shadow Labyrinth",
+      "spells": [
+        {"id": 33547, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "18667": {
+      "npc": "Blackheart the Inciter",
+      "instance": "Shadow Labyrinth",
+      "spells": [
+        {"id": 33676, "name": "Incite Chaos", "type": "charm"}
+      ]
+    },
+    "19220": {
+      "npc": "Pathaleon the Calculator",
+      "instance": "The Mechanar",
+      "spells": [
+        {"id": 35280, "name": "Domination", "type": "charm"}
+      ]
+    },
+    "20875": {
+      "npc": "Negaton Screamer",
+      "instance": "The Arcatraz",
+      "spells": [
+        {"id": 13704, "name": "Psychic Scream", "type": "fear"}
+      ]
+    },
+    "20902": {
+      "npc": "Sargeron Hellcaller",
+      "instance": "The Arcatraz",
+      "spells": [
+        {"id": 39048, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "19513": {
+      "npc": "Mutate Fear-Shrieker",
+      "instance": "The Botanica",
+      "spells": [
+        {"id": 30584, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "17833": {
+      "npc": "Durnholde Warden",
+      "instance": "Old Hillsbrad Foothills",
+      "spells": [
+        {"id": 22884, "name": "Psychic Scream", "type": "fear"}
+      ]
+    },
+    "24560": {
+      "npc": "Priestess Delrissa",
+      "instance": "Magisters' Terrace",
+      "spells": [
+        {"id": 22884, "name": "Psychic Scream", "type": "fear"}
+      ]
+    },
+    "24558": {
+      "npc": "Ellrys Duskhallow",
+      "instance": "Magisters' Terrace",
+      "spells": [
+        {"id": 38595, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "24559": {
+      "npc": "Warlord Salaris",
+      "instance": "Magisters' Terrace",
+      "spells": [
+        {"id": 19134, "name": "Frightening Shout", "type": "fear"}
+      ]
+    }
+  }
+}

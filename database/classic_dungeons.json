@@ -1,0 +1,159 @@
+{
+  "metadata": {
+    "expansion": "classic",
+    "content_type": "dungeons",
+    "version": "2.0.0",
+    "last_updated": "2026-05-02"
+  },
+  "npcs": {
+    "3671": {
+      "npc": "Lady Anacondra",
+      "instance": "Wailing Caverns",
+      "spells": [
+        {"id": 8040, "name": "Druid's Slumber", "type": "sleep"}
+      ]
+    },
+    "3669": {
+      "npc": "Lord Cobrahn",
+      "instance": "Wailing Caverns",
+      "spells": [
+        {"id": 8040, "name": "Druid's Slumber", "type": "sleep"}
+      ]
+    },
+    "3670": {
+      "npc": "Lord Pythas",
+      "instance": "Wailing Caverns",
+      "spells": [
+        {"id": 8040, "name": "Druid's Slumber", "type": "sleep"}
+      ]
+    },
+    "3673": {
+      "npc": "Lord Serpentis",
+      "instance": "Wailing Caverns",
+      "spells": [
+        {"id": 8040, "name": "Druid's Slumber", "type": "sleep"}
+      ]
+    },
+    "3840": {
+      "npc": "Druid of the Fang",
+      "instance": "Wailing Caverns",
+      "spells": [
+        {"id": 8040, "name": "Druid's Slumber", "type": "sleep"}
+      ]
+    },
+    "2529": {
+      "npc": "Son of Arugal",
+      "instance": "Shadowfang Keep",
+      "spells": [
+        {"id": 7399, "name": "Terrify", "type": "fear"}
+      ]
+    },
+    "3872": {
+      "npc": "Deathsworn Captain",
+      "instance": "Shadowfang Keep",
+      "spells": [
+        {"id": 7399, "name": "Terrify", "type": "fear"}
+      ]
+    },
+    "4518": {
+      "npc": "Death's Head Sage",
+      "instance": "Razorfen Kraul",
+      "spells": [
+        {"id": 12542, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "6490": {
+      "npc": "Azshir the Sleepless",
+      "instance": "Scarlet Monastery",
+      "spells": [
+        {"id": 7399, "name": "Terrify", "type": "fear"}
+      ]
+    },
+    "3977": {
+      "npc": "High Inquisitor Whitemane",
+      "instance": "Scarlet Monastery",
+      "spells": [
+        {"id": 9256, "name": "Deep Sleep", "type": "sleep"},
+        {"id": 14515, "name": "Dominate Mind", "type": "charm"}
+      ]
+    },
+    "5271": {
+      "npc": "Atal'ai Deathwalker",
+      "instance": "Sunken Temple",
+      "spells": [
+        {"id": 12542, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "8895": {
+      "npc": "Anvilrage Officer",
+      "instance": "Blackrock Depths",
+      "spells": [
+        {"id": 5246, "name": "Intimidating Shout", "type": "fear"}
+      ]
+    },
+    "9218": {
+      "npc": "Spirestone Battle Lord",
+      "instance": "Lower Blackrock Spire",
+      "spells": [
+        {"id": 19134, "name": "Frightening Shout", "type": "fear"}
+      ]
+    },
+    "9217": {
+      "npc": "Spirestone Lord Magus",
+      "instance": "Lower Blackrock Spire",
+      "spells": [
+        {"id": 12542, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "10430": {
+      "npc": "The Beast",
+      "instance": "Upper Blackrock Spire",
+      "spells": [
+        {"id": 14100, "name": "Terrifying Roar", "type": "fear"}
+      ]
+    },
+    "11445": {
+      "npc": "Gordok Captain",
+      "instance": "Dire Maul",
+      "spells": [
+        {"id": 12542, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "11448": {
+      "npc": "Gordok Warlock",
+      "instance": "Dire Maul",
+      "spells": [
+        {"id": 12542, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "10508": {
+      "npc": "Ras Frostwhisper",
+      "instance": "Scholomance",
+      "spells": [
+        {"id": 26070, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "10502": {
+      "npc": "Lady Illucia Barov",
+      "instance": "Scholomance",
+      "spells": [
+        {"id": 26070, "name": "Fear", "type": "fear"},
+        {"id": 7645, "name": "Dominate Mind", "type": "charm"}
+      ]
+    },
+    "11143": {
+      "npc": "Postmaster Malown",
+      "instance": "Stratholme",
+      "spells": [
+        {"id": 12542, "name": "Fear", "type": "fear"}
+      ]
+    },
+    "10409": {
+      "npc": "Rockwing Screecher",
+      "instance": "Stratholme",
+      "spells": [
+        {"id": 6605, "name": "Terrifying Screech", "type": "fear"}
+      ]
+    }
+  }
+}
