@@ -5,7 +5,7 @@
 
 local cfg = {
   -- Icon appearance
-  iconSize    = 20,      -- Icon width and height in pixels
+  iconScale   = 1.0,     -- Icon size as a multiple of the health bar height
   iconTexture = "Interface\\Icons\\Spell_Nature_TremorTotem",
   
   -- Icon positioning

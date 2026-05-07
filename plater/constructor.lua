@@ -10,7 +10,7 @@
 -- ---------------------------------------------------------------------------
 
 local cfg = {
-  iconSize    = 20,
+  iconScale   = 1.0,
   iconTexture = "Interface\\Icons\\Spell_Nature_TremorTotem",
   xOffset     = -2,
   yOffset     = 0,

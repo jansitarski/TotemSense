@@ -36,11 +36,16 @@ local cfg = envTable.cfg
 local icon = unitFrame.CCPlatesIcon
 if not icon then
   icon = unitFrame.healthBar:CreateTexture(nil, "OVERLAY")
-  icon:SetTexture(cfg.iconTexture)
-  icon:SetWidth(cfg.iconSize)
-  icon:SetHeight(cfg.iconSize)
-  icon:SetPoint(cfg.anchorPoint, unitFrame.healthBar, cfg.anchorPoint, cfg.xOffset, cfg.yOffset)
   unitFrame.CCPlatesIcon = icon
 end
+
+local barHeight = unitFrame.healthBar:GetHeight()
+local size = barHeight * cfg.iconScale
+
+icon:SetTexture(cfg.iconTexture)
+icon:SetWidth(size)
+icon:SetHeight(size)
+icon:ClearAllPoints()
+icon:SetPoint(cfg.anchorPoint, unitFrame.healthBar, cfg.anchorPoint, cfg.xOffset, cfg.yOffset)
 
 icon:Show()
