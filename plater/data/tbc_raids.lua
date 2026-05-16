@@ -43,6 +43,12 @@ return {
     npc      = "High King Maulgar",
   },
 
+  [21350] = {
+    spells   = { {id = 22884, name = "Psychic Scream", type = "fear"} },
+    instance = "Gruul's Lair",
+    npc      = "Gronn-Priest",
+  },
+
   -- ===========================================================================
   -- MAGTHERIDON'S LAIR (Instance 544)
   -- ===========================================================================
@@ -69,6 +75,12 @@ return {
     npc      = "Leotheras the Blind",
   },
 
+  [21218] = {
+    spells   = { {id = 38946, name = "Frightening Shout", type = "fear"} },
+    instance = "Serpentshrine Cavern",
+    npc      = "Vashj'ir Honor Guard",
+  },
+
   [22056] = {
     spells   = { {id = 38154, name = "Panic", type = "fear"} },
     instance = "Serpentshrine Cavern",
@@ -87,6 +99,7 @@ return {
     instance = "Tempest Keep",
     npc      = "Kael'thas Sunstrider",
   },
+
 
   -- ===========================================================================
   -- HYJAL SUMMIT (Instance 534)
@@ -114,6 +127,12 @@ return {
     npc      = "Ashtongue Primalist",
   },
 
+  [22855] = {
+    spells   = { {id = 41150, name = "Fear", type = "fear"} },
+    instance = "Black Temple",
+    npc      = "Illidari Nightlord",
+  },
+
   -- ===========================================================================
   -- ZUL'AMAN (Instance 568)
   -- ===========================================================================
@@ -122,5 +141,11 @@ return {
     spells   = { {id = 42398, name = "Frightening Roar", type = "fear"} },
     instance = "Zul'Aman",
     npc      = "Nalorakk",
+  },
+
+  [24246] = {
+    spells   = { {id = 43590, name = "Psychic Wail", type = "fear"} },
+    instance = "Zul'Aman",
+    npc      = "Darkheart",
   },
 }

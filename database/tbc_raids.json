@@ -3,7 +3,7 @@
     "expansion": "tbc",
     "content_type": "raids",
     "version": "2.0.0",
-    "last_updated": "2026-05-02"
+    "last_updated": "2026-05-16"
   },
   "npcs": {
     "15547": {
@@ -41,6 +41,13 @@
         {"id": 16508, "name": "Intimidating Roar", "type": "fear"}
       ]
     },
+    "21350": {
+      "npc": "Gronn-Priest",
+      "instance": "Gruul's Lair",
+      "spells": [
+        {"id": 22884, "name": "Psychic Scream", "type": "fear"}
+      ]
+    },
     "17256": {
       "npc": "Hellfire Channeler",
       "instance": "Magtheridon's Lair",
@@ -60,6 +67,13 @@
       "instance": "Serpentshrine Cavern",
       "spells": [
         {"id": 37749, "name": "Madness", "type": "charm"}
+      ]
+    },
+    "21218": {
+      "npc": "Vashj'ir Honor Guard",
+      "instance": "Serpentshrine Cavern",
+      "spells": [
+        {"id": 38946, "name": "Frightening Shout", "type": "fear"}
       ]
     },
     "22056": {
@@ -98,11 +112,25 @@
         {"id": 19386, "name": "Wyvern Sting", "type": "sleep"}
       ]
     },
+    "22855": {
+      "npc": "Illidari Nightlord",
+      "instance": "Black Temple",
+      "spells": [
+        {"id": 41150, "name": "Fear", "type": "fear"}
+      ]
+    },
     "23576": {
       "npc": "Nalorakk",
       "instance": "Zul'Aman",
       "spells": [
         {"id": 42398, "name": "Frightening Roar", "type": "fear"}
+      ]
+    },
+    "24246": {
+      "npc": "Darkheart",
+      "instance": "Zul'Aman",
+      "spells": [
+        {"id": 43590, "name": "Psychic Wail", "type": "fear"}
       ]
     }
   }
