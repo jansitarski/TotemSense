@@ -69,6 +69,13 @@ Entry format:
 
 **Classic Dungeons:** Scholomance, Stratholme, UBRS, LBRS, BRD, and other dungeons with fear effects
 
+## Roadmap
+
+- **Poison Totem tracking** — mark NPCs that apply poisons (Poison Cleansing Totem reminder)
+- **Disease Totem tracking** — mark NPCs that apply diseases (Disease Cleansing Totem reminder)
+- **Grounding Totem tracking** — mark NPCs that cast harmful single-target spells (Grounding Totem reminder)
+- **Standalone addon** — work with stock Blizzard nameplates without requiring Plater
+
 ## Troubleshooting
 
 - Ensure Plater is enabled and enemy nameplates are visible (`V` key)
