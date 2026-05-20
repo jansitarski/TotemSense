@@ -1,4 +1,4 @@
-# Contributing to CCPlates
+# Contributing to TotemSense
 
 ## Adding a New NPC
 

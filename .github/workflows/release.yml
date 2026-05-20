@@ -34,14 +34,14 @@ jobs:
         with:
           files: plater/import_string.txt
           body: |
-            ## CCPlates ${{ github.ref_name }}
+            ## TotemSense ${{ github.ref_name }}
             
             ### Installation
             
             1. Download `import_string.txt` from the assets below
             2. Copy the contents
             3. In-game: `/plater` → **Modding** tab → **Import Mod** → paste → **OK**
-            4. Enable CCPlates, click **Save**, `/reload`
+            4. Enable TotemSense, click **Save**, `/reload`
             
             Also available on [wago.io](https://wago.io/2UXjP2xSx).
         env:

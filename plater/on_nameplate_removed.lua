@@ -6,6 +6,6 @@
 -- INSTALLATION: Paste the code below into the "Nameplate Removed" hook in Plater Modding tab.
 -- =============================================================================
 
-if unitFrame.CCPlatesIcon then
-  unitFrame.CCPlatesIcon:Hide()
+if unitFrame.TotemSenseIcon then
+  unitFrame.TotemSenseIcon:Hide()
 end

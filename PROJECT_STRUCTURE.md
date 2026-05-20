@@ -1,7 +1,7 @@
 # Project Structure
 
 ```
-CCPlates/
+TotemSense/
 ├── README.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md

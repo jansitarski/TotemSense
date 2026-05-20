@@ -7,8 +7,8 @@
 -- =============================================================================
 
 -- Always hide any leftover icon first (frame recycling defense)
-if unitFrame.CCPlatesIcon then
-  unitFrame.CCPlatesIcon:Hide()
+if unitFrame.TotemSenseIcon then
+  unitFrame.TotemSenseIcon:Hide()
 end
 
 -- Skip friendly units and players
@@ -33,10 +33,10 @@ if not envTable.FearDatabase[npcId] then return end
 
 -- Create or reuse the icon texture
 local cfg = envTable.cfg
-local icon = unitFrame.CCPlatesIcon
+local icon = unitFrame.TotemSenseIcon
 if not icon then
   icon = unitFrame.healthBar:CreateTexture(nil, "OVERLAY")
-  unitFrame.CCPlatesIcon = icon
+  unitFrame.TotemSenseIcon = icon
 end
 
 local barHeight = unitFrame.healthBar:GetHeight()

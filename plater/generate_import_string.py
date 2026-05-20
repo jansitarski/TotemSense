@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_import_string.py — Plater Nameplates import string generator for CCPlates
+generate_import_string.py — Plater Nameplates import string generator for TotemSense
 
 Reads the modular Plater hook files (constructor.lua, on_nameplate_added.lua,
 on_nameplate_removed.lua), builds the Plater hook index table, and produces a
@@ -266,10 +266,10 @@ def build_index_table(hooks: dict) -> dict:
     """
     ts = int(time.time())
     return {
-        "1": "CCPlates",
+        "1": "TotemSense",
         "2": "Interface\\Icons\\Spell_Nature_TremorTotem",
         "3": "Shows Tremor Totem icon on nameplates of NPCs that cast Fear, Charm, or Sleep",
-        "4": "CCPlates",
+        "4": "TotemSense",
         "5": ts,
         "6": 1,           # Revision
         "7": 1,           # PlaterCore minimum version

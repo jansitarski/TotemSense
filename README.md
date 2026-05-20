@@ -1,10 +1,10 @@
-# CCPlates - Tremor Totem Tracker for Plater
+# TotemSense - Tremor Totem Tracker for Plater
 
 Plater Nameplates mod for WoW TBC Classic Shamans. Shows a Tremor Totem icon on nameplates of NPCs that cast Fear, Charm, or Sleep.
 
 Covers Classic and TBC raids and dungeons. Configurable icon size, position, and texture. O(1) NPC lookups, no combat lockout issues, ~9 KB footprint.
 
-![CCPlates in action](.github/ccplates-collage.png)
+![TotemSense in action](.github/ccplates-collage.png)
 
 ## Installation
 
@@ -18,7 +18,7 @@ Covers Classic and TBC raids and dungeons. Configurable icon size, position, and
 1. Run `python3 generate_import_string.py` in the `plater/` directory
 2. Copy the output
 3. In-game: `/plater` > **Modding** tab > **Import Mod** > paste > **OK**
-4. Enable CCPlates in the **Modding** tab, click **Save**, `/reload`
+4. Enable TotemSense in the **Modding** tab, click **Save**, `/reload`
 
 All three hooks are configured on import.
 
@@ -79,7 +79,7 @@ Entry format:
 ## Troubleshooting
 
 - Ensure Plater is enabled and enemy nameplates are visible (`V` key)
-- Verify CCPlates is enabled in Plater's Modding tab
+- Verify TotemSense is enabled in Plater's Modding tab
 - `/reload` to reset
 
 ## Contributing
