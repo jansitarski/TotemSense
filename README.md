@@ -4,7 +4,7 @@ Plater Nameplates mod for WoW TBC Classic Shamans. Shows a Tremor Totem icon on 
 
 Covers Classic and TBC raids and dungeons. Configurable icon size, position, and texture. O(1) NPC lookups, no combat lockout issues, ~9 KB footprint.
 
-![TotemSense in action](.github/ccplates-collage.png)
+![TotemSense in action](.github/totemsense-collage.png)
 
 ## Installation
 
