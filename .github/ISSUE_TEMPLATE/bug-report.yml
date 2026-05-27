@@ -1,0 +1,53 @@
+name: Bug report
+description: Something isn't working - icon not showing, Lua error, wrong NPC tagged, etc.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Enter <instance>
+        2. Pull <NPC>
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: totemsense-version
+    attributes:
+      label: TotemSense version / release tag
+      placeholder: e.g. v3
+    validations:
+      required: true
+  - type: input
+    id: plater-version
+    attributes:
+      label: Plater version
+    validations:
+      required: true
+  - type: input
+    id: wow-version
+    attributes:
+      label: WoW client / interface version
+      placeholder: e.g. TBC Classic Anniversary (Interface 20505)
+    validations:
+      required: true
+  - type: textarea
+    id: lua-error
+    attributes:
+      label: Lua error (if any)
+      description: Paste the full error from BugSack / BugGrabber or the default error frame.
+      render: text
+  - type: textarea
+    id: other-addons
+    attributes:
+      label: Other relevant addons
+      description: Especially other nameplate or Plater mods.

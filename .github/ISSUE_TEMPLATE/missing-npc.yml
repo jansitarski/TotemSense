@@ -1,0 +1,61 @@
+name: Missing NPC
+description: Report an NPC that casts Fear, Charm, or Sleep but isn't tracked.
+title: "[NPC] <NPC name> in <Instance>"
+labels: ["missing-npc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tremor Totem only removes **fear**, **charm**, and **sleep**.
+        It does **not** remove stun, polymorph, hex, sap, root, silence, or horror — please don't file those.
+
+        See [CONTRIBUTING.md](../blob/master/CONTRIBUTING.md) for how to find NPC and spell IDs.
+  - type: input
+    id: npc-name
+    attributes:
+      label: NPC name
+      placeholder: e.g. The Big Bad Wolf
+    validations:
+      required: true
+  - type: input
+    id: npc-id
+    attributes:
+      label: NPC ID
+      description: From `/run` macro or Wowhead URL.
+      placeholder: e.g. 17521
+    validations:
+      required: true
+  - type: input
+    id: instance
+    attributes:
+      label: Instance
+      placeholder: e.g. Karazhan
+    validations:
+      required: true
+  - type: dropdown
+    id: expansion
+    attributes:
+      label: Expansion / content
+      options:
+        - TBC raid
+        - TBC dungeon
+        - Classic raid
+        - Classic dungeon
+    validations:
+      required: true
+  - type: textarea
+    id: spells
+    attributes:
+      label: Spell(s)
+      description: One per line. Format - `<spell id> | <spell name> | <fear|charm|sleep>`
+      placeholder: |
+        30752 | Terrifying Howl | fear
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: How did you verify this?
+      description: e.g. tested in-game with Tremor Totem down, checked combat log, Wowhead, DBM/Details.
+    validations:
+      required: true
