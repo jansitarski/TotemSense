@@ -70,17 +70,17 @@ python3 database/generate_database.py --format json
 
 Output:
 ```
-✓ Loaded tbc_raids.json: 14 NPCs
+✓ Loaded tbc_raids.json: 18 NPCs
 ✓ Loaded tbc_dungeons.json: 22 NPCs
 ✓ Loaded classic_raids.json: 14 NPCs
 ✓ Loaded classic_dungeons.json: 21 NPCs
 
 === Database Validation ===
-Total NPCs: 71
+Total NPCs: 75
   Classic: 35
-  TBC: 36
+  TBC: 40
 Spell Types:
-  Fear: 52
+  Fear: 56
   Charm: 13
   Sleep: 9
 ✓ Validation passed
@@ -238,13 +238,13 @@ Current coverage (v2.0.0):
 
 | Category | Count |
 |----------|-------|
-| **Total NPCs** | **71** |
+| **Total NPCs** | **75** |
 | Classic Raids | 14 |
 | Classic Dungeons | 21 |
-| TBC Raids | 14 |
+| TBC Raids | 18 |
 | TBC Dungeons | 22 |
 | **Effect Types** | |
-| Fear | 52 |
+| Fear | 56 |
 | Charm | 13 |
 | Sleep | 9 |
 
