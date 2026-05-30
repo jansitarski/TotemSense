@@ -91,6 +91,12 @@ return {
   -- TEMPEST KEEP: THE EYE (Instance 550)
   -- ===========================================================================
 
+  [18805] = {
+    spells   = { {id = 22884, name = "Psychic Scream", type = "fear"} },
+    instance = "Tempest Keep",
+    npc      = "High Astromancer Solarian",
+  },
+
   [19622] = {
     spells   = {
       {id = 44863, name = "Fear",         type = "fear"},
@@ -98,6 +104,12 @@ return {
     },
     instance = "Tempest Keep",
     npc      = "Kael'thas Sunstrider",
+  },
+
+  [20060] = {
+    spells   = { {id = 39427, name = "Bellowing Roar", type = "fear"} },
+    instance = "Tempest Keep",
+    npc      = "Lord Sanguinar",
   },
 
 

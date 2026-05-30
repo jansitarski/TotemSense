@@ -83,12 +83,26 @@
         {"id": 38154, "name": "Panic", "type": "fear"}
       ]
     },
+    "18805": {
+      "npc": "High Astromancer Solarian",
+      "instance": "Tempest Keep",
+      "spells": [
+        {"id": 22884, "name": "Psychic Scream", "type": "fear"}
+      ]
+    },
     "19622": {
       "npc": "Kael'thas Sunstrider",
       "instance": "Tempest Keep",
       "spells": [
         {"id": 44863, "name": "Fear", "type": "fear"},
         {"id": 36797, "name": "Mind Control", "type": "charm"}
+      ]
+    },
+    "20060": {
+      "npc": "Lord Sanguinar",
+      "instance": "Tempest Keep",
+      "spells": [
+        {"id": 39427, "name": "Bellowing Roar", "type": "fear"}
       ]
     },
     "17808": {
